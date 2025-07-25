@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Accidental Evils</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="MainText">
+  <div class="video-wrapper">
+    <video id="logoVideo" autoplay muted playsinline>
+      <source src="crownSpinning.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <h2>brooklyn based classical theater</h2>
+  <h1>ACCIDENTAL EVILS</h1>
+
+  <!-- <hr /> -->
+
+  <nav>
+    <a href="comingSoon.html">gallery.</a>
+    <a href="comingSoon.html">about.</a>
+    <a href="comingSoon.html">contact.</a>
+  </nav>
+    </div>
+  <script>
+    const video = document.getElementById('logoVideo');
+    video.addEventListener('ended', () => {
+      video.removeAttribute('autoplay');
+    });
+
+    video.addEventListener('click', () => {
+      video.play();
+    });
+  </script>
+</body>
+</html>
