@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Accidental Evils</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="crownClear.png" />
-
 
 </head>
 <script>
@@ -36,28 +37,27 @@
 </script>
 
 <body>
-    <div class="MainText">
-  <div class="video-wrapper">
-    <video id="logoVideo" autoplay muted playsinline>
-      <source src="crownSpinning.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <h2>brooklyn based classical theater</h2>
-  <h1>ACCIDENTAL EVILS</h1>
-
-  <!-- <hr /> -->
-
-  <nav>
-    <a href="comingSoon.html">past.</a>
+     <header>
+    <img src="crownClear.png" alt="Accidental Evils Logo" class="small-logo" />
+    <nav>
+      <a href="index.html">home.</a>
+      <a href="comingSoon.html">past.</a>
       <a href="comingSoon.html">future.</a>
-    <a href="about.html">about.</a>
-    <a href="contact.html">contact.</a>
-  </nav>
-    </div>
-<br><br>
-    <p><i>get ready to imitate the sun with us</i></p>
+      <a href="about.html">about.</a>
+      <!-- <a href="comingSoon.html">contact.</a> -->
+    </nav>
+  </header>
+
+  <main>
+    <h1>contact.</h1>
+    <p>accidental.evils@gmail.com<br>
+    </p>
+    <a href="https://www.instagram.com/accidental.evils/" target="_blank" class="social-icon" aria-label="Instagram">
+  <i class="fab fa-instagram"></i>
+</a>
+  <p>@accidental.evils</p>
+
+
   <script>
     const video = document.getElementById('logoVideo');
     video.addEventListener('ended', () => {

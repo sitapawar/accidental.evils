@@ -13,7 +13,6 @@ body {
 }
 
 video {
-  
   width: 30%;
   height: auto;
   display: block;
@@ -63,7 +62,7 @@ hr {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #6780b5;
+  color: #b8c9e6;
   font-weight: bold;
   font-family: 'Playfair Display', serif;
 
@@ -71,4 +70,59 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+
+/* Logo at top of about page */
+.small-logo {
+  width: 80px;
+  margin: 20px auto 10px;
+  display: block;
+}
+
+/* Adjust nav spacing under logo */
+header nav {
+  margin-bottom: 30px;
+}
+
+main{
+margin-top: 10%;
+}
+
+p{
+color:#6780b5;
+margin-left:20%;
+margin-right:20%;
+
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #b8c9e6;
+  margin: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #6780b5; /* Instagram pink */
+}
+
+
+
+/* # Transitions */
+
+/* Fade transition setup */
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+/* Optional: make link clicks feel smooth */
+a {
+  transition: color 0.3s ease;
 }

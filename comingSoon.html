@@ -6,9 +6,37 @@
   <title>Accidental Evils</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="crownClear.png" />
 
 </head>
+<script>
+  // Fade in on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-in");
+  });
+
+  // Fade out on link click (for internal nav only)
+  document.querySelectorAll("a[href]").forEach(link => {
+    const url = new URL(link.href);
+    const isInternal = location.hostname === url.hostname;
+
+    if (isInternal) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = this.getAttribute("href");
+        document.body.classList.remove("fade-in");
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = target;
+        }, 300); // match transition time
+      });
+    }
+  });
+</script>
+
 <body>
+
+  
     <div class="MainText">
   <div class="video-wrapper">
     <video id="logoVideo" autoplay muted playsinline>
@@ -22,7 +50,7 @@
   <!-- <hr /> -->
 
   <nav>
-    <a href="/index.html">back.</a>
+    <a href="index.html">back.</a>
   </nav>
     </div>
   <script>
